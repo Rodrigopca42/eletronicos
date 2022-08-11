@@ -31,6 +31,7 @@ public class Product {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
 	//metodo toString que retorna no programa principal a o texto formatado da classe produto
 	public String priceTag() {
 		return name + " R$"+ String.format("%.2f", price);

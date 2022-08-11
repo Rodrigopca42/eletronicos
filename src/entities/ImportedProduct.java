@@ -27,14 +27,17 @@ public class ImportedProduct extends Product{
 		this.customsFee = customsFee;
 	}
 	
+	
 	public double totalPrice() {
-		return super.getPrice() + customsFee;
+		return getPrice() + customsFee;
 	}
 	
-	@Override
+	
 	//metodo toString que retorna no programa principal a o texto formatado da classe produto importado
+	
+	@Override
 		public String priceTag() {
-			return super.getName() 
+			return getName() 
 					+ " R$"
 					+ String.format("%.2f", totalPrice()) 
 							+ "(Taxa alfandegária: R$" 

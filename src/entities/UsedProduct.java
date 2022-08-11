@@ -30,13 +30,13 @@ public class UsedProduct extends Product {
 		this.manufacturDate = manufacturDate;
 	}
 	
+	//metodo toString que retorna no programa principal o texto formatado da classe produto usádo
 	
 	@Override
-	//metodo toString que retorna no programa principal o texto formatado da classe produto usádo
 		public String priceTag() {
-			return super.getName() 
+			return getName() 
 					+ " (usado) R$"
-					+ String.format("%.2f", super.getPrice()) 
+					+ String.format("%.2f", getPrice()) 
 							+ "(Data de fabricação: " 
 					+ sdf.format(manufacturDate) + ")";
 	}
